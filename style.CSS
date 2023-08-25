@@ -1,0 +1,52 @@
+body{
+    background-color: aqua;
+    text-align: center;
+}
+
+#g{
+    width: 83px;
+    height: 33px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#g:hover{
+    background-color: crimson;
+}
+
+#research{
+    width: 83px;
+    height: 33px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#research:hover{
+    background-color: darkorchid;
+}
+
+#abc{
+    width: 83px;
+    height: 33px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#abc:hover{
+    background-color: limegreen;
+}
+
+#sub{
+    width: 180px;
+    height: 33px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#sub:hover{
+    background-color: rgb(179, 34, 174);
+}

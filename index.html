@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Churn Prediction </title>
+    <link rel="stylesheet" href="/staticFiles/style.CSS">
+</head>
+<body>
+    <div style="color: blue;">
+        <form action="{{url_for('predict')}}" method="post">
+            <input type="text" placeholder="Tenure" required="required" name="Tenure">
+            <input type="text" placeholder="MonthlyCharges" required="required" name="MonthlyCharges">
+            <input type="text" placeholder="TotalCharges" required="required" name="TotalCharges">
+
+
+            <h3> Gender </h3>
+            <select name="Gender" id="g" required="required">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+            <h3> SeniorCitizen </h3>
+            <select name="SeniorCitizen" id="g" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3> PartnerType </h3>
+            <select name="Partner" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>Dependents</h3>
+            <select name="Dependents" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>PhoneService</h3>
+            <select name="PhoneService" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>MultipleLines</h3>
+            <select name="MultipleLines" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>InternetService</h3>
+            <select name="InternetService" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>OnlineSecurity</h3>
+            <select name="OnlineSecurity" id="abc" required="required">
+                <option value="0">DSL</option>
+                <option value="1">Fiber Optic</option>
+                <option value="2">No</option>
+            </select>
+
+            <h3>OnlineBackup</h3>
+            <select name="OnlineBackup" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>DeviceProtection</h3>
+            <select name="DeviceProtection" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>TechSupport</h3>
+            <select name="TechSupport" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>StreamingTV</h3>
+            <select name="StreamingTV" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>StreamingMovies</h3>
+            <select name="StreamingMovies" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>Contract</h3>
+            <select name="Contract" id="abc" required="required">
+                <option value="0">Month-to-month</option>
+                <option value="1">One year</option>
+                <option value="2">Two year</option>
+            </select>
+
+            <h3>PaperlessBilling</h3>
+            <select name="PaperlessBilling" id="research" required="required">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <h3>PaymentMethod</h3>
+            <select name="PaymentMethod" id="abc" required="required">
+                <option value="0">Bank transfer</option>
+                <option value="1">Credit cardk</option>
+                <option value="2">Electronic checkr</option>
+                <option value="3">Mailed transfer</option>
+            </select>
+
+            <br><br>
+            <button id="sub"  type="submit">Prediction</button>
+            <br>
+
+        </form>
+
+        <br><br>
+        {{Prediction_Text}}
+    </div>
+</body>
+</html>
